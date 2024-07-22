@@ -157,7 +157,7 @@ strong.destaque{
     text-align: center;
 }
 .projeto_conteudo{
-    width: 615px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -178,7 +178,7 @@ strong.destaque{
     transition: all 0.2s;
 }
 .projeto_fotos {
-    width: 615px;
+    width: 300px;
 }
 
 
