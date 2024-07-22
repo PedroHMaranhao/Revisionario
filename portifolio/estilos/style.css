@@ -157,13 +157,13 @@ strong.destaque{
     text-align: center;
 }
 .projeto_conteudo{
-    width: 300px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .projeto_conteudo_descricao {
-    height: 120px;
+    height: 200px;
 }
 .projeto_conteudo_links{
     display: flex;
@@ -178,7 +178,7 @@ strong.destaque{
     transition: all 0.2s;
 }
 .projeto_fotos {
-    width: 300px;
+    width: 450px;
 }
 
 
