@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projeto-revisionario/style/style.css">
+    <title>ChatGPT</title>
+</head>
+<body>
+    <header>
+        <a id="paginaInicial" href="/projeto-revisionario/index.html"><h1>Revisionário</h1></a>
+    </header>
+    <main>
+        <h1>ChatGPT</h1>
+        <p>
+            O ChatGPT é um modelo de linguagem da OpenAI, projetado para gerar e entender texto de forma autônoma. Baseado na arquitetura GPT, ele foi treinado com grandes volumes de dados textuais, permitindo que responda perguntas, participe de conversas e execute várias tarefas de processamento de linguagem natural. Suas aplicações incluem atendimento ao cliente, suporte técnico e assistentes virtuais, oferecendo respostas coerentes e contextualmente relevantes.
+        </p>
+        <br>
+        <h2>Estratégias de consultas no ChatGPT</h2>
+        <ol>
+            <li>Comandos como "Eu quero", "eu preciso", "me dê"</li>
+            <li>Comclusão de texto como "O Chat GPT é importante para..."</li>
+            <li>Demonstração de exemplos(Few Shots) para ele compreender uma lógica</li>
+        </ol>
+        <br>
+        <h2>Pedidos complexos</h2>
+        <p>quebre a demanda em tarefas menores e mais específicas</p>
+        <br>
+        <h2>formatos de saída</h2>
+        <textarea readonly rows="18" cols="60">
+            Devolva o resultado em código Javascript:
+
+            ```
+                
+            titulo = ""
+                
+            ideia_de_thumbnail = ""
+                
+            descricao = ""
+                
+            duracao = ""
+                
+            canais = []
+                
+            pontos_fortes = []
+                
+            ```
+        </textarea>
+        <h2>Delimitadores para indicar claramente partes distintas do prompt</h2>
+        <p>
+            """ (três aspas duplas): O uso de três aspas duplas é comum em várias linguagens de programação e serve para indicar um texto que não deve ser processado ou interpretado. No ChatGPT, isso pode ser usado para separar o texto da instrução. Isso ajuda a deixar a intenção da pergunta ou tópico mais clara para o modelo, facilitando a geração de uma resposta.
+        </p>
+        <br>
+        <p>O exemplo da estrutura abaixo descreve uma contextualização do que queremos e um título que a IA irá gerar com base nesse contexto</p>
+        <br>
+        <div class="exemplos">
+            <p>
+                """Texto entre 3 aspas duplas"""
+            </p>
+            <br>
+            <p>Título:</p>
+        </div><br>
+        <p>
+            ```(três crases): As três crases são usadas para indicar que o conteúdo entre elas é tratado como um bloco de código. 
+        </p><br>
+        <p>
+            _____ (sublinhados): Os sublinhados podem ser usados para gerar um resultado no formato de formulário. Isso é interessante, caso você queira automatizar o resultado de um prompt e não deseja que o resultado seja em código, apenas em texto.
+        </p><br>
+        <p>Exemplo:</p>
+        <div class="exemplos">
+            <p>Título: _____</p>
+            <p>Descrição: _____</p>
+            <p>Ideia de thumbnail: _____</p>
+            <p>Texto de thumbnail: _____</p>
+            <p>Duração: _____</p>
+            <p>Canais: _____, _____,_____</p>
+            <p>Pontos fortes: _____,_____,_____</p>
+        </div><br>
+        <section>
+            <h2>Dicas de prompt</h2>
+            <p>Use acentos e caracteres especiais e sinais de pontuação</p>
+            <p>Use citações</p>
+            <p>Seja claro</p>
+            <p>Forneça contexto</p>
+            <p>Evite perguntas complexas ou que exijam respostas detalhadas</p>
+            <p>Digite: Explique passo a passo.</p>
+            <p>Conteúdos extensos devem ser quebrados para não ultrapassar um certo limite ou perder precisão</p>
+            <br>
+            <h2>Automatização</h2>
+            <p>você pode usar variáveis para pedir que a resposta se adapte a um certo template no prompt</p>
+            <p>Utilize o playground para separar as instruções em system e a parte textual em message.</p>
+            <br>
+        </section>
+        <section>
+            <h1>Modelos criados</h1>
+            <h2>Automatização de resumos de textos de análise com saída em JSON</h2>
+            <p>Para cada texto entre """ : </p>
+            <p>Atribua um número de ID</p>
+            <p>Resuma o texto em no máximo 30 palavras, usando a língua portuguesa brasileira.</p>
+            <p>Faça uma lista citando os pontos fortes do produto.</p>
+            <p>Faça uma lista citando os pontos fracos do produto.</p>
+            <p>Analise se o sentimento da pessoa que escreveu o texto é positivo, neutro ou negativo em relação ao produto.</p>
+            <br>
+            <p>Preciso que a sua resposta seja no formato JSON usando as seguintes chaves:</p>
+            <p>ID da resenha</p>
+            <p>Resumo</p>
+            <p>Lista de pontos fortes</p>
+            <p>Lista de pontos fracos</p>
+            <p>Sentimento</p>
+            <br>
+            <p>"""texto1"""</p>
+            <br>
+            <p>"""texto2"""</p>
+            <br>
+            <p>"""texto3"""</p>
+        </section>
+    </main>
+    <footer>
+        <span>Página por Pedro Maranhão</span><br>
+        <a href="/projeto-revisionario/portifolio/index.html">Sobre mim</a>
+        <a href="https://www.linkedin.com/in/pedromaranhao/">Linkedin</a>
+        <a href="https://github.com/PedroHMaranhao">Github</a>
+    </footer>
+</body>
+</html>
